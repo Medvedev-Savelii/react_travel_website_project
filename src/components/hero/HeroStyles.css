@@ -3,6 +3,7 @@
 	height: 100vh;
 	color: #fff;
 	position: relative;
+	
 }
 
 .overlay {
@@ -37,24 +38,24 @@
 
 .form {
 	display: flex;
-	background-color: #ffffffcc;
-	color: #000;
-	justify-content: space-between;
-	align-items: center;
-	border: 1px solid #ccc;
-	padding: 4px;
-	border-radius: 8px;
-	max-width: 700px;
-	width: 100%;
-	margin: 0 auto;
+    background-color: #ffffffcc;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .form input[type="text"] {
 	border: transparent;
-	background-color: transparent;
-	width: 400px;
-	font-size: 1.2rem;
-	font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    width: 400px;
+    font-size: 1.2rem;
+    font-family: 'Poppins',sans-serif;
 }
 
 .form input[type=text]:focus {
@@ -62,3 +63,9 @@
 }
 
 
+@media screen and (max-width: 940px) {
+    .form input[type=text] {
+        max-width: 275px;
+    }
+
+}

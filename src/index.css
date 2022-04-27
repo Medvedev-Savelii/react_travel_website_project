@@ -37,6 +37,8 @@ h2 {
 	max-width: 1240px;
 	margin: auto;
 	padding: 0 1rem;
+	overflow:hidden;
+
 }
 
 button {
