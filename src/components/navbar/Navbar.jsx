@@ -11,21 +11,32 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import "./NavbarStyles.css";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
   const handleNav = () => setNav(!nav);
   return (
-    <div className={nav ? "navbar navbar-bg" : "navbar"}>
+    <div name="home" className={nav ? "navbar navbar-bg" : "navbar"}>
       <div className={nav ? "logo dark" : "logo"}>
         <h2>BETCHES.</h2>
       </div>
       <ul className="nav-menu">
-        <li>Home</li>
-        <li>Destination</li>
-        <li>Travel</li>
-        <li>Book</li>
-        <li>Views</li>
+        <Link to="home" smooth={true} duration={500}>
+          <li>Home</li>
+        </Link>
+        <Link to="destinations" smooth={true} duration={500}>
+          <li>Destinations</li>
+        </Link>
+        <Link to="carousel" smooth={true} duration={500}>
+          <li>Travel</li>
+        </Link>
+        <Link to="book" smooth={true} duration={500}>
+          <li>Book</li>
+        </Link>
+        <Link to="views" smooth={true} duration={500}>
+          <li>Views</li>
+        </Link>
       </ul>
       <div className="nav-icons">
         <BiSearch className="icon" style={{ marginRight: "1rem" }} />
@@ -41,11 +52,21 @@ function Navbar() {
 
       <div className={nav ? "mobile-menu active" : "mobile-menu"}>
         <ul className="mobile-nav">
-          <li>Home</li>
-          <li>Destination</li>
-          <li>Travel</li>
-          <li>Book</li>
-          <li>Views</li>
+          <Link to="home" smooth={true} duration={500}>
+            <li>Home</li>
+          </Link>
+          <Link to="destinations" smooth={true} duration={500}>
+            <li>Destinations</li>
+          </Link>
+          <Link to="carousel" smooth={true} duration={500}>
+            <li>Travel</li>
+          </Link>
+          <Link to="search" smooth={true} duration={500}>
+            <li>Book</li>
+          </Link>
+          <Link to="views" smooth={true} duration={500}>
+            <li>Views</li>
+          </Link>
         </ul>
         <div className="mobile-menu-bottom">
           <div className="menu-icons">
